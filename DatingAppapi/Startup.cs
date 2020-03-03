@@ -38,6 +38,7 @@ namespace DatingAppapi
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseHttpsRedirection();
 
